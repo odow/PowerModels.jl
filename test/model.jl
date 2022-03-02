@@ -40,7 +40,7 @@ end
 
         @test result["termination_status"] == OPTIMAL
         @test result["primal_status"] == FEASIBLE_POINT
-        @test result["dual_status"] == NO_SOLUTION
+        @test result["dual_status"] == FEASIBLE_POINT
         @test isapprox(result["objective"], 17613.2; atol = 1e0)
     end
 end
